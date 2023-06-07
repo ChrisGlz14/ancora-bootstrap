@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*===================================================================== MENU =================================================================*/
+#menu a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+}
+
+.carousel-inner {
+    object-position: bottom center;
+    max-height: 30rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* MEDIA QUERYS */
+  @media (max-width:768px) {
+    #intro {
+        width: 90% !important;
+    }
+  }
