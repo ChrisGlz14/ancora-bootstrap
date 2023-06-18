@@ -39,8 +39,7 @@ body {
 
 
   .container-logo a img {
-    border-radius: 1000px;
-    background-color: #ffffff;
+    background-color: transparent;
   }
 
 

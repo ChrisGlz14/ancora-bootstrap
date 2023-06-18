@@ -17,14 +17,27 @@ li a:hover{
   }
 
   .container-logo a img {
-    border-radius: 1000px;
-    background-color: #cccaca;
+    background-color: transparent;
   }
 
 
   /* CARD */
 
-  .card {
+  .card{
     width: 700px;
     height: auto;
   }
+  .card:hover{
+    transform: scale(1.10,1.10);
+    transition: 0.4s;
+  }
+
+  .card-tomy {
+    opacity: 0;
+    transition: opacity 1.5s ease 0s;
+  }
+  
+  .card-tomy.visible {
+    opacity: 1;
+  }
+  
