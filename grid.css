@@ -1,0 +1,30 @@
+html{
+    font-family: sans-serif;
+  }
+  
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  ul{
+    display: flex;
+    list-style-type: none;
+  }
+  ul li a{
+    display: inline-block;
+    padding-right: 30px;
+  }
+  a{
+    text-decoration: none;
+  }
+  .grid-container {
+    margin: auto;
+  }
+  .grid-container div{
+    height: 300px;
+  }
+  .grid-container a{
+    border: solid;
+  }

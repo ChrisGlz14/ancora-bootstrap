@@ -1,0 +1,333 @@
+html body{
+  font-family: saira, sans-serif;
+  background-color: #0a1a2a;
+}
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+header{
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+ul{
+  display: flex;
+  list-style-type: none;
+  border-radius: 40px;
+  box-shadow: 0px 5px 5px rgb(0,0,0,0.5);
+}
+ul li a{
+  font-size: 1.5em;
+  display: inline-block;
+  padding: 5px;
+  padding-right: 20px;
+  padding-left: 25px;
+  color: black;
+}
+ul li a:hover{
+  background-color: #0a2a5a;
+  opacity: .7;
+  color:aliceblue;
+  border-radius: 5000px;
+  transform: scale(1.05,1.05);
+    transition: 0.1s;
+}
+
+.logo-container{
+  border: inset 10px #0a1a2a;
+  border-radius: 10px;
+}
+
+
+/* SLIDER */
+
+.position{
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider{
+  background-image: url(/img/1.jpg);
+  background-size: cover;
+  box-shadow: 0 13px 13px rgb(0,0,0,1);
+  height: 80%;
+  width: 90%;
+  border-radius: 10px;
+  animation: animate 30s infinite;
+}
+
+@keyframes animate{
+  20%{
+    background-image: url(/img/5.jpg);
+    background-size: cover;
+  }
+  40%{
+    background-image: url(/img/4.jpg);
+    background-size: cover;
+  }
+  60%{
+    background-image: url(/img/3.jpg);
+    background-size: cover;
+  }
+  80%{
+    background-image: url(/img/2.jpg);
+    background-size: cover;
+  }
+  100%{
+    background-image: url(/img/1.jpg);
+    background-size: cover;
+  }
+}
+
+/* GRID-TARJETAS */
+.grid-container {
+ margin-top: 600px;
+ margin-bottom: 100px;
+}
+.grid-container div{
+  height: 300px;
+  border-radius: 10px;
+}
+.grid-container div a{
+  border-radius: 10px;
+}
+.grid-container div a:hover{
+  border-radius: 10px;
+  box-shadow: 0 13px 13px rgb(0, 0, 0, 1);
+  transform: scaleY(1.05,1.05);
+    transition: 0.4s;
+}
+#modelos:hover{
+  background-image: url(/img/modelos.jpg);
+  background-size: cover;
+  animation: imggrid 8s infinite;
+}
+#info-interes:hover{
+  background-image: url(/img/info.jpg);
+  background-size: cover;
+  animation: imggrid 8s infinite;
+}
+#s-ancora:hover{
+  background-image: url(/img/ANCORA\ LOGO\ JPG.jpg);
+  background-size: cover;
+  animation: imggrid 8s infinite;
+}
+#calculo:hover{
+  background-image: url(/img/calculo.jpg);
+  background-size: cover;
+  animation: imggrid 8s infinite;
+}
+@keyframes imggrid {
+  20%{
+    transform: translateY(-10px);
+  }
+}
+
+
+/*PIE DE PAGINA*/
+.pie-pagina .grupo-1{
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box h3{
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 10px;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+  color:aquamarine;
+}
+.pie-pagina .grupo-2{
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+}
+
+/*Logo Ancora*/
+
+footer figure img:hover{
+  animation: figure 8s infinite;
+}
+@keyframes figure {
+  20%{
+    transform: translateX(60px);
+  }
+}
+
+
+/*RESPONSIVE NAV*/
+.menu {
+  display:none;
+}
+
+
+
+/**/header .menu button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+/**/header .menu button:hover{
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+
+/**/@media (max-width: 767px){
+    #nav-links{
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
+
+header a{
+  text-decoration: none;  
+}
+
+header .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(33, 49, 63, .95);
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+header .overlay .overlay-content{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;    
+}
+
+header .overlay a{
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  color: #eceff1;
+}
+
+header .overlay a:hover, 
+header .overlay a:focus{
+  color: #ffbc0e;
+}
+
+header .overlay .close{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+}
+
+@media (max-height:450px) {
+  header .overlay a{
+      font-size: 20px;
+  }
+  header .overlay .close{
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+  }
+}
+
+/*@media (max-width: 767px){
+  header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+}
+@media (max-width: 767px){
+ul{
+  display: flex;
+  width: 50%;
+}
+}*/
+
+/*RESPONSIVE PIE DE PAGINA*/
+@media (max-width: 767px){
+  .pie-pagina .grupo-1{
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 25px 0px;
+  }
+}
+
+@media (max-width: 767px){
+  .pie-pagina{
+      margin-top: 950px;
+}
+}
+
+/*RESPONSIVE SLIDER*/
+@media (max-width: 900px) {
+.position{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+}
+@media (max-width: 767px){
+  .slider{
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}
+
+/*RESPONSIVE GRID*/
+@media (max-width: 767px){
+  .grid-container div a{
+  grid-template-columns: 1fr;
+  position: relative;
+  margin-left: 50px;
+  justify-content: center;
+  width: 80%;
+   }
+}
