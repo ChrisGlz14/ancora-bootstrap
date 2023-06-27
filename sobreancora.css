@@ -30,7 +30,6 @@ body {
 }
 
 .underline1 {
-  margin-left: 50px;
   color: #ffff;
   border-bottom: 4px solid rgb(255, 255, 255); /* estilo del subrayado */
   padding-bottom: 2px; /* Espacio entre el texto y el subrayado */
