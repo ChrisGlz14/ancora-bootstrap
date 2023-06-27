@@ -70,17 +70,13 @@ body {
 }
 
 .redes a{
-  display: inline-block;
   text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  margin-right: 10px;
   text-align: center;
-  transition: all 300ms ease;
+  transition: all .3s ease;
+  color: #0099ff;
 }
 .redes a:hover{
-  color:aquamarine;
+  color:rgb(216, 255, 242);
 }
 
 
