@@ -1,6 +1,7 @@
 html body{
   font-family: saira, sans-serif;
-  background-color: #0a1a2a;
+  background: rgb(251,251,245);
+  background: linear-gradient(180deg, rgba(251,251,245,1) 0%, rgba(50,50,50,1) 100%);
 }
 a {
   text-decoration: none;
@@ -8,6 +9,7 @@ a {
 
 /* HEADER */
 header{
+  z-index: -400;
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -42,6 +44,11 @@ ul li a:hover{
   border-radius: 10px;
 }
 
+.logo-container img{
+  height: 70px;
+  width: auto;
+}
+
 
 /* SLIDER */
 
@@ -58,8 +65,8 @@ ul li a:hover{
   box-shadow: 0 13px 13px rgb(0,0,0,1);
   height: 80%;
   width: 90%;
-  border-radius: 10px;
-  animation: animate 30s infinite;
+  border-radius: 0px;
+  animation: animate 30s infinite; 
 }
 
 @keyframes animate{
