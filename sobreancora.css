@@ -24,9 +24,46 @@ body {
 
 /* SERVICIOS */
 
-.servicios {
-  height: 500px;
+.servicios1 {
+  height: auto;
   background-color: #0e173b;
+}
+
+.underline1 {
+  margin-left: 50px;
+  color: #ffff;
+  border-bottom: 4px solid rgb(255, 255, 255); /* estilo del subrayado */
+  padding-bottom: 2px; /* Espacio entre el texto y el subrayado */
+}
+
+.servicios-parrafo1 {
+  font-size: 25px;
+  margin-top: 20px;
+  color: #ffff;
+  line-height: 40px;
+  padding-bottom: 200px;
+}
+
+/* SERVICIOS 2 */
+
+.servicios2 {
+  height: auto;
+  background-color: #ffffff;
+}
+
+.underline2 {
+  margin-right: 50px;
+  color: #0e173b;
+  border-bottom: 4px solid #0e173b; 
+  padding-bottom: 2px;
+}
+
+.servicios-parrafo2 {
+  font-size: 25px;
+  margin-top: 20px;
+  color: #0e173b;
+  line-height: 40px;
+  padding-bottom: 200px;
 }
 
 
