@@ -1,48 +1,28 @@
-html body{
+body{
   font-family: saira, sans-serif;
-  background: rgb(251,251,245);
-  background: linear-gradient(180deg, rgba(251,251,245,1) 0%, rgba(50,50,50,1) 100%);
-}
-a {
-  text-decoration: none;
+  /* background: linear-gradient(180deg, rgba(251,251,245,1) 0%, rgba(50,50,50,1) 100%); */
+  background-color: #6666;
 }
 
+
 /* HEADER */
-header{
-  z-index: -400;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
+
 ul{
-  display: flex;
-  list-style-type: none;
-  border-radius: 40px;
-  box-shadow: 0px 5px 5px rgb(0,0,0,0.5);
+  border-radius: 5000px;
+  background-color: rgb(255, 255, 255);
 }
 ul li a{
-  font-size: 1.5em;
   display: inline-block;
   padding: 5px;
   padding-right: 20px;
   padding-left: 25px;
-  color: black;
+  color: rgb(255, 0, 0);
+  margin-left: 25px;
 }
 ul li a:hover{
-  background-color: #0a2a5a;
-  opacity: .7;
-  color:aliceblue;
-  border-radius: 5000px;
-  transform: scale(1.05,1.05);
-    transition: 0.1s;
+  color:rgb(247, 0, 0);
 }
 
-.logo-container{
-  border: inset 10px #0a1a2a;
-  border-radius: 10px;
-}
 
 .logo-container img{
   height: 70px;
@@ -52,7 +32,7 @@ ul li a:hover{
 
 /* SLIDER */
 
-.position{
+/* .position{
   position: absolute;
   top: 58%;
   left: 50%;
@@ -90,55 +70,55 @@ ul li a:hover{
     background-image: url(/img/1.jpg);
     background-size: cover;
   }
-}
+} */
 
 /* GRID-TARJETAS */
-.grid-container {
+/* .grid-container {
  margin-top: 600px;
  margin-bottom: 100px;
 }
 .grid-container div{
   height: 300px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .grid-container div a{
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .grid-container div a:hover{
   border-radius: 10px;
-  box-shadow: 0 13px 13px rgb(0, 0, 0, 1);
-  transform: scaleY(1.05,1.05);
-    transition: 0.4s;
+  transition: 0.4s;
+  animation: imggrid 1s ease-in;
 }
 #modelos:hover{
   background-image: url(/img/modelos.jpg);
+  box-shadow: 0 2px 20px 2px rgb(0, 0, 0, 1);
+  transform: translateY(20px);
   background-size: cover;
-  animation: imggrid 8s infinite;
 }
 #info-interes:hover{
   background-image: url(/img/info.jpg);
+  box-shadow: 0 2px 20px 2px rgb(0, 0, 0, 1);
   background-size: cover;
-  animation: imggrid 8s infinite;
 }
 #s-ancora:hover{
   background-image: url(/img/ANCORA\ LOGO\ JPG.jpg);
+  box-shadow: 0 2px 20px 2px rgb(0, 0, 0, 1);
   background-size: cover;
-  animation: imggrid 8s infinite;
 }
 #calculo:hover{
   background-image: url(/img/calculo.jpg);
+  box-shadow: 0 2px 20px 2px rgb(0, 0, 0, 1);
   background-size: cover;
-  animation: imggrid 8s infinite;
 }
 @keyframes imggrid {
   20%{
     transform: translateY(-10px);
   }
-}
+} */
 
 
 /*PIE DE PAGINA*/
-.pie-pagina .grupo-1{
+/* .pie-pagina .grupo-1{
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   padding: 45px 0px;
@@ -172,28 +152,28 @@ ul li a:hover{
 }
 .pie-pagina .grupo-2 small{
   font-size: 15px;
-}
+} */
 
 /*Logo Ancora*/
 
-footer figure img:hover{
+/* footer figure img:hover{
   animation: figure 8s infinite;
 }
 @keyframes figure {
   20%{
     transform: translateX(60px);
   }
-}
+} */
 
 
 /*RESPONSIVE NAV*/
-.menu {
+/* .menu {
   display:none;
 }
 
 
 
-/**/header .menu button{
+header .menu button{
     margin-left: 20px;
     font-weight: 700;
     color: #1b3039;
@@ -205,15 +185,12 @@ footer figure img:hover{
     transition: all 0.3s ease 0s;
 }
 
-
-/**/header .menu button:hover{
-    background-color: #e2f1f8;
+header .menu button:hover{
     color: #ffbc0e;
-    transform: scale(1.1);
-}
+} */
 
 
-/**/@media (max-width: 767px){
+/* @media (max-width: 767px){
     #nav-links{
         display: none;
     }
@@ -276,7 +253,7 @@ header .overlay .close{
       top: 15px;
       right: 35px;
   }
-}
+} */
 
 /*@media (max-width: 767px){
   header{
@@ -294,7 +271,7 @@ ul{
 }*/
 
 /*RESPONSIVE PIE DE PAGINA*/
-@media (max-width: 767px){
+/* @media (max-width: 767px){
   .pie-pagina .grupo-1{
     width: 90%;
     grid-template-columns: repeat(3, 1fr);
@@ -307,10 +284,10 @@ ul{
   .pie-pagina{
       margin-top: 950px;
 }
-}
+} */
 
 /*RESPONSIVE SLIDER*/
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
 .position{
   position: absolute;
   top: 70%;
@@ -325,11 +302,11 @@ ul{
     width: 100%;
     object-fit: cover;
     object-position: bottom;
-  }
+  } */
 }
 
 /*RESPONSIVE GRID*/
-@media (max-width: 767px){
+/* @media (max-width: 767px){
   .grid-container div a{
   grid-template-columns: 1fr;
   position: relative;
@@ -337,4 +314,4 @@ ul{
   justify-content: center;
   width: 80%;
    }
-}
+} */
