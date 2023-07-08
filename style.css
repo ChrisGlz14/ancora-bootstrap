@@ -4,6 +4,13 @@ body{
   background-color: #6666;
 }
 
+.nav-pc {
+  height: 200px;
+}
+
+.nav-pc #nav-links {
+  
+}
 
 /* HEADER */
 
@@ -12,83 +19,57 @@ ul{
   background-color: rgb(255, 255, 255);
 }
 ul li a{
-  display: inline-block;
-  padding: 5px;
-  padding-right: 20px;
-  padding-left: 25px;
-  color: rgb(255, 0, 0);
+  margin-right: 25px;
   margin-left: 25px;
 }
-ul li a:hover{
-  color:rgb(247, 0, 0);
-}
-
 
 .logo-container img{
   height: 70px;
-  width: auto;
 }
 
 
 /* SLIDER */
-
-/* .position{
+.text-slider {
   position: absolute;
-  top: 58%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50px;
+  z-index: 20;
 }
 
 .slider{
-  background-image: url(/img/1.jpg);
+  position: absolute;  
   background-size: cover;
-  box-shadow: 0 13px 13px rgb(0,0,0,1);
-  height: 80%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  right: 50%;
+  top: 560px;
   width: 90%;
-  border-radius: 0px;
-  animation: animate 30s infinite; 
+  height: 100vh;
+  box-shadow: 0 13px 13px rgb(0,0,0,1);
+  z-index: 19;
 }
 
-@keyframes animate{
-  20%{
-    background-image: url(/img/5.jpg);
-    background-size: cover;
-  }
-  40%{
-    background-image: url(/img/4.jpg);
-    background-size: cover;
-  }
-  60%{
-    background-image: url(/img/3.jpg);
-    background-size: cover;
-  }
-  80%{
-    background-image: url(/img/2.jpg);
-    background-size: cover;
-  }
-  100%{
-    background-image: url(/img/1.jpg);
-    background-size: cover;
-  }
-} */
+
+
 
 /* GRID-TARJETAS */
-/* .grid-container {
- margin-top: 600px;
- margin-bottom: 100px;
+.container-cards {
+  position: relative;
+  margin-bottom: 100px;
+  top: 600px;
 }
-.grid-container div{
+.container-cards div{
   height: 300px;
   border-radius: 5px;
 }
-.grid-container div a{
+.container-cards div a{
   border-radius: 5px;
 }
-.grid-container div a:hover{
+.container-cards div a:hover{
   border-radius: 10px;
   transition: 0.4s;
   animation: imggrid 1s ease-in;
 }
+
 #modelos:hover{
   background-image: url(/img/modelos.jpg);
   box-shadow: 0 2px 20px 2px rgb(0, 0, 0, 1);
@@ -110,7 +91,8 @@ ul li a:hover{
   box-shadow: 0 2px 20px 2px rgb(0, 0, 0, 1);
   background-size: cover;
 }
-@keyframes imggrid {
+
+/* @keyframes imggrid {
   20%{
     transform: translateY(-10px);
   }
@@ -303,7 +285,7 @@ ul{
     object-fit: cover;
     object-position: bottom;
   } */
-}
+
 
 /*RESPONSIVE GRID*/
 /* @media (max-width: 767px){
