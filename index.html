@@ -24,59 +24,38 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header
-      class="d-flex align-items-center justify-content-between p-1 mb-1 z-0"
+    
     >
       <!-- LOGO -->
-      <div class="logo-container m-4">
-        <img src="../img/ANCORA 01 png.png" />
-      </div>
+      
 
       <!-- NAV -->
-      <nav class="nav-pc">
-        <ul
-          id="nav-links"
-          class="d-flex list-unstyled nav-underline p-4 m-4 fs-5"
-        >
-          <li>
-            <a
-              class="p-1 nav-link text-decoration-none text-primary"
-              href="index.html"
-              >Inicio</a
-            >
-          </li>
-          <li>
-            <a class="p-1 nav-link text-decoration-none" href="Equipo.html"
-              >Equipo</a
-            >
-          </li>
-          <li>
-            <a class="p-1 nav-link text-decoration-none" href="sobreancora.html"
-              >Sobre Ancora</a
-            >
-          </li>
-          <li>
-            <a class="p-1 nav-link text-decoration-none" href="Contacto.html"
-              >Contacto</a
-            >
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-nav container-fluid">
+          <div class="logo-container p-2">
+            <img src="../img/ANCORA 01 png.png" />
+          </div>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="nav-vertical nav-underline">
+              <li class="nav-item">
+                <a class="nav-link fs-5" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="./sobreancora.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="#">Proyectos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
       </nav>
-      
-  
-     <!--NAV MOBILE -->
-<a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
-
-<div id="mobile-menu" class="overlay">
-  <!--closeNav; widht 0%; -->
-    <a onclick="closeNav()" href="" class="close">&times;</a>
-    <div class="overlay-content">
-        <a href="Ancora.html">Inicio</a>
-       <a href="Equipo.html">Equipo</a>
-        <a href="Contacto.html">Contacto</a>
-   </div>
-</div>
-    </header>
+   
 
     <div
       class="text-slider-container row-12 text-slider p-3 mb-3 position-relative text-bg-dark opacity-75"
@@ -87,31 +66,30 @@
 
     <!-- SLIDER -->
 
-    <div class="slider container-fluid">
-      <div
-        id="carouselExampleInterval"
-        class="carousel slide position-fixed max-width-500"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner h-100% shadow mb-5">
-          <div
-            class="img-container carousel-item active"
-            data-bs-interval="2000"
-          >
-            <img src="../img/2.jpg" class="" alt="..." />
-          </div>
-          <div class="img-container carousel-item" data-bs-interval="2000">
-            <img src="../img/2.jpg" class="" alt="..." />
-          </div>
-          <div class="img-container carousel-item">
-            <img src="../img/3.jpg" class="" alt="..." />
-          </div>
+    <div id="carouselExampleInterval" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./img/2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./img/2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/2.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <!-- GRID CONTAINER -->
-    <div class="container-fluid">
+    <div class="container">
       <div class="container-cards d-grid">
         <div class="container text-center m-auto">
           <div class="row row-cols-4">

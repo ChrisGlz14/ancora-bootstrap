@@ -4,23 +4,19 @@ body{
   background-color: #6666;
 }
 
-.nav-pc {
- 
-}
-
-.nav-pc #nav-links {
-  
-}
 
 /* HEADER */
 
-ul{
-  border-radius: 5000px;
-  background-color: rgb(255, 255, 255);
+
+@media screen and (max-width: 990px) {
+.nav-vertical {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
 }
-ul li a{
-  margin-right: 25px;
-  margin-left: 25px;
 }
 
 .logo-container img{
@@ -73,9 +69,8 @@ ul li a{
 
 /* GRID-TARJETAS */
 .container-cards {
-  position: relative;
+  
   margin-bottom: 100px;
-  top: 600px;
 }
 .container-cards div{
   height: 300px;
@@ -168,97 +163,7 @@ ul li a{
 } */
 
 
-/*RESPONSIVE NAV*/
-.menu {
-  display:none;
-}
 
-
-
-/**/header .menu button{
-    margin-left: 20px;
-    font-weight: 700;
-    color: #1b3039;
-    padding: 9px 25px;
-    background: #eceff1;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-
-/**/header .menu button:hover{
-    background-color: #e2f1f8;
-    color: #ffbc0e;
-    transform: scale(1.1);
-}
-
-
-/**/@media (max-width: 767px){
-    #nav-links{
-        display: none;
-    }
-    .menu {
-        display: inherit;
-    }
-}
-
-header a{
-  text-decoration: none;  
-}
-
-header .overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  background-color: rgba(33, 49, 63, .95);
-  overflow: hidden;
-  transition: all 0.3s ease 0s;
-}
-
-header .overlay .overlay-content{
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;    
-}
-
-header .overlay a{
-  padding: 15px;
-  font-size: 36px;
-  display: block;
-  transition: all 0.3s ease 0s;
-  font-weight: 700;
-  color: #eceff1;
-}
-
-header .overlay a:hover, 
-header .overlay a:focus{
-  color: #ffbc0e;
-}
-
-header .overlay .close{
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 65px;
-}
-
-@media (max-height:450px) {
-  header .overlay a{
-      font-size: 20px;
-  }
-  header .overlay .close{
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-  }
-}
 
 /*@media (max-width: 767px){
   header{
