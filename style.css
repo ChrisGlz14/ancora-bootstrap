@@ -1,236 +1,252 @@
-body{
-  font-family: saira, sans-serif;
-  /* background: linear-gradient(180deg, rgba(251,251,245,1) 0%, rgba(50,50,50,1) 100%); */
-  background-color: #6666;
-}
-
-
-/* HEADER */
-
-.nav-vertical {
-  display: flex;
-  list-style: none;
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-
-@media screen and (max-width: 990px) {
-.nav-vertical {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-}
-}
-
-.logo-container img{
-  height: 70px;
-}
-
-
-/* SLIDER */
-.text-slider-container {
-  position: absolute;
-  top: 100px;
-  z-index: 20;
-}
-
-@media screen and (max-width: 560px) {
-  .text-slider-container {
-    position: absolute;
-    top: 10px;
-    height: 90px;
+  body{
+    font-family: saira, sans-serif;
+    /* background: linear-gradient(180deg, rgba(251,251,245,1) 0%, rgba(50,50,50,1) 100%); */
+    background-color: #6666;
   }
 
-  .text-slider-container h1,h3 {
 
-    font-size: 15px;
+  /* HEADER */
+
+  .nav-vertical {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    align-items: center;
   }
-  
-}
 
-.slider{
-  position: absolute;  
-  background-size: cover;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  right: 50%;
-  top: 160px;
-  width: 90%;
-  height: auto;
-  box-shadow: 0 13px 13px rgb(0,0,0,1);
-  z-index: 19;
-}
-
-
-.img-container img {
-  width: 100%;
-  height: auto;
-}
-
-
-
-
-/* GRID-TARJETAS */
-.container-cards {
-  
-  margin-bottom: 100px;
-}
-.container-cards div{
-  height: 300px;
-  border-radius: 5px;
-}
-.container-cards div a{
-  border-radius: 5px;
-}
-.container-cards div a:hover{
-  border-radius: 10px;
-  transition: 0.4s;
-  animation: imggrid 1s ease-in;
-}
-
-#modelos:hover{
-  background-image: url(/img/modelos.jpg);
-  box-shadow: 0 2px 20px 2px rgb(0, 0, 0, 1);
-  transform: translateY(20px);
-  background-size: cover;
-}
-#info-interes:hover{
-  background-image: url(/img/info.jpg);
-  box-shadow: 0 2px 20px 2px rgb(0, 0, 0, 1);
-  background-size: cover;
-}
-#s-ancora:hover{
-  background-image: url(/img/ANCORA\ LOGO\ JPG.jpg);
-  box-shadow: 0 2px 20px 2px rgb(0, 0, 0, 1);
-  background-size: cover;
-}
-#calculo:hover{
-  background-image: url(/img/calculo.jpg);
-  box-shadow: 0 2px 20px 2px rgb(0, 0, 0, 1);
-  background-size: cover;
-}
-
-/* @keyframes imggrid {
-  20%{
-    transform: translateY(-10px);
+  .navbar-toggler {
+    border: none;
   }
-} */
 
-
-/*PIE DE PAGINA*/
-/* .pie-pagina .grupo-1{
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  padding: 45px 0px;
-}
-
-.pie-pagina .grupo-1 .box h3{
-  margin-bottom: 25px;
-  font-size: 20px;
-}
-.pie-pagina .grupo-1 .box p{
-  margin-bottom: 10px;
-}
-.pie-pagina .grupo-1 .red-social a{
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  margin-right: 10px;
-  text-align: center;
-  transition: all 300ms ease;
-}
-.pie-pagina .grupo-1 .red-social a:hover{
-  color:aquamarine;
-}
-.pie-pagina .grupo-2{
-  background-color: #0a1a2a;
-  padding: 15px 10px;
-  text-align: center;
-  color: #fff;
-}
-.pie-pagina .grupo-2 small{
-  font-size: 15px;
-} */
-
-/*Logo Ancora*/
-
-/* footer figure img:hover{
-  animation: figure 8s infinite;
-}
-@keyframes figure {
-  20%{
-    transform: translateX(60px);
-  }
-} */
-
-
-
-
-/*@media (max-width: 767px){
-  header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-}
-@media (max-width: 767px){
-ul{
-  display: flex;
-  width: 50%;
-}
-}*/
-
-/*RESPONSIVE PIE DE PAGINA*/
-/* @media (max-width: 767px){
-  .pie-pagina .grupo-1{
-    width: 90%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    padding: 25px 0px;
-  }
-}
-
-@media (max-width: 767px){
-  .pie-pagina{
-      margin-top: 950px;
-}
-} */
-
-/*RESPONSIVE SLIDER*/
-/* @media (max-width: 900px) {
-.position{
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-}
-@media (max-width: 767px){
-  .slider{
-    background-size: cover;
-    border-radius: 10px;
-    width: 100%;
-    object-fit: cover;
-    object-position: bottom;
+  /* .navbar.toggler:focus {
+    box-shadow: 0;
   } */
 
 
-/*RESPONSIVE GRID*/
-/* @media (max-width: 767px){
-  .grid-container div a{
-  grid-template-columns: 1fr;
-  position: relative;
-  margin-left: 50px;
-  justify-content: center;
-  width: 80%;
-   }
-} */
+  @media screen and (max-width: 990px) {
+  .nav-vertical {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  }
+
+  .logo-container img{
+    height: 70px;
+  }
+
+
+  /* SLIDER */
+  .text-slider-container {
+    position: absolute;
+    top: 100px;
+    z-index: 20;
+  }
+
+  @media screen and (max-width: 560px) {
+    .text-slider-container {
+      position: absolute;
+      top: 10px;
+      height: 90px;
+    }
+
+    .text-slider-container h1,h3 {
+
+      font-size: 15px;
+    }
+    
+  }
+
+  .slider{
+    position: absolute;  
+    background-size: cover;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    right: 50%;
+    top: 160px;
+    width: 90%;
+    height: auto;
+    box-shadow: 0 13px 13px rgb(0,0,0,1);
+    z-index: 19;
+  }
+
+
+  .img-container img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+
+  /* GRID-TARJETAS */
+  .container-grid {
+    
+  }
+  .container-cards {
+    margin-bottom: 100px;
+  }
+  .container-cards div{
+    height: 300px;
+    border-radius: 5px;
+  }
+  .container-cards div a{
+    border-radius: 5px;
+  }
+  .container-cards div a:hover{
+    transition: 0.7s;
+  }
+  
+  .grid-items a div img{
+    height: 200px;
+    width: auto;
+
+  }
+
+  #s-ancora{
+    transition: all 0.4s;
+    background-size: 200px;
+    background-repeat: no-repeat;
+  }
+  #s-ancora:hover{
+    transition: all 0.4s;
+  }
+  #calculo{
+    transition: all 0.4s;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    transition: all 0.4s;
+  }
+  #modelos{
+    transition: all 0.4s;
+    background-size: cover;
+    background-size: 200px;
+    background-repeat: no-repeat;
+  }
+  #modelos:hover{
+    transition: all 0.4s;
+  }
+  #info-interes{
+    transition: all 0.4s;
+    background-size: 200px;
+    background-repeat: no-repeat;
+  }
+  #info-interes:hover{
+    transition: all 0.4s;
+  }
+
+
+  /*PIE DE PAGINA*/
+  /* .pie-pagina .grupo-1{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+
+  .pie-pagina .grupo-1 .box h3{
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .pie-pagina .grupo-1 .box p{
+    margin-bottom: 10px;
+  }
+  .pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .pie-pagina .grupo-1 .red-social a:hover{
+    color:aquamarine;
+  }
+  .pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+  }
+  .pie-pagina .grupo-2 small{
+    font-size: 15px;
+  } */
+
+  /*Logo Ancora*/
+
+  /* footer figure img:hover{
+    animation: figure 8s infinite;
+  }
+  @keyframes figure {
+    20%{
+      transform: translateX(60px);
+    }
+  } */
+
+
+
+
+  /*@media (max-width: 767px){
+    header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  }
+  @media (max-width: 767px){
+  ul{
+    display: flex;
+    width: 50%;
+  }
+  }*/
+
+  /*RESPONSIVE PIE DE PAGINA*/
+  /* @media (max-width: 767px){
+    .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+      padding: 25px 0px;
+    }
+  }
+
+  @media (max-width: 767px){
+    .pie-pagina{
+        margin-top: 950px;
+  }
+  } */
+
+  /*RESPONSIVE SLIDER*/
+  /* @media (max-width: 900px) {
+  .position{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  }
+  @media (max-width: 767px){
+    .slider{
+      background-size: cover;
+      border-radius: 10px;
+      width: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    } */
+
+
+  /*RESPONSIVE GRID*/
+  /* @media (max-width: 767px){
+    .grid-container div a{
+    grid-template-columns: 1fr;
+    position: relative;
+    margin-left: 50px;
+    justify-content: center;
+    width: 80%;
+    }
+  } */
