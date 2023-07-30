@@ -24,38 +24,54 @@
   </head>
   <body>
     <!-- HEADER -->
-    
-    
-      <!-- LOGO -->
-      
 
-      <!-- NAV -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-nav container-fluid">
-          <div class="logo-container p-2">
-            <img src="./img/ANCORA 01 png.png" />
-          </div>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="nav-vertical nav-underline p-4">
-              <li class="nav-item">
-                <a class="nav-link fs-5" aria-current="page" href="./index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-5 m-3" href="./sobreancora.html">Sobre Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-5" href="#">Proyectos</a>
-              </li>
-            </ul>
-          </div>
+    <!-- LOGO -->
+
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-nav container-fluid">
+        <div class="logo-container">
+          <img src="./img/ANCORA 01 png.png" />
         </div>
-    
-      </nav>
-   
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="nav-vertical nav-underline p-4">
+            <li class="nav-item">
+              <a class="nav-link fs-5" aria-current="page" href="./index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="./sobreancora.html"
+                >Sobre Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="./sobreancora.html"
+                >Cotizá</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#">Proyectos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- <div class="text-slider-container row-12 text-slider p-3 mb-3 position-relative text-bg-dark opacity-75">
       <h1 class="">Empresa contructora profesional</h1>
@@ -64,65 +80,85 @@
 
     <!-- SLIDER -->
 
-    <div id="carouselExampleInterval" class="carousel slide mb-4" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="./img/2.jpg" class="d-block w-100" alt="...">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slider"
+        data-bs-ride="carousel bg-light "
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./img/2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./img/2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/2.jpg" class="d-block w-100" alt="..." />
+          </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="./img/2.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/2.jpg" class="d-block w-100" alt="...">
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
 
     <!-- GRID CONTAINER -->
-    <div class="container-grid bg-light">
+    <div class="container-grid">
       <div class="container-cards d-grid">
         <div class="container text-center m-auto">
-          <div class="grid-items row row-cols-1 row-cols-md-4"> <!-- Utilizamos row-cols-1 para que en dispositivos móviles ocupe una columna completa y row-cols-md-4 para que en pantalla de escritorio ocupe 4 columnas -->
-            <a href="Calcular.html" class=" col text-dark text-decoration-none">
+          <div class="grid-items row row-cols-1 row-cols-md-2 row-cols-xl-4">
+            <!-- Utilizamos row-cols-1 para que en dispositivos móviles ocupe una columna completa y row-cols-md-4 para que en pantalla de escritorio ocupe 4 columnas -->
+            <a href="sobreancora.html" class="col text-dark text-decoration-none">
               <div id="s-ancora">
                 <h3>Sobre Ancora</h3>
-                <img src="img/ANCORA-LOGO-JPG.svg" alt="">
+                <img src="img/ANCORA-LOGO-JPG.svg" alt="" />
               </div>
             </a>
-    
-            <a href="Calcular.html" class=" col text-dark text-decoration-none">
+
+            <a href="Calcular.html" class="col text-dark text-decoration-none">
               <div id="calculo">
                 <h3>Calculo</h3>
-                <img src="img/business-color_calculator_icon-icons.com_53466.svg" alt="">
+                <img
+                  src="img/business-color_calculator_icon-icons.com_53466.svg"
+                  alt=""
+                />
               </div>
             </a>
-    
-            <a href="Calcular.html" class=" col text-dark text-decoration-none">
+
+            <a href="Calcular.html" class="col text-dark text-decoration-none">
               <div id="modelos">
                 <h3>Modelos</h3>
-                <img src="img/construction_project_plan_building_architect_design_develop-62_icon-icons.com_60212.svg" alt="">
+                <img
+                  src="img/construction_project_plan_building_architect_design_develop-62_icon-icons.com_60212.svg"
+                  alt=""
+                />
               </div>
             </a>
-    
-            <a href="Calcular.html" class=" col text-dark text-decoration-none">
+
+            <a href="Calcular.html" class="col text-dark text-decoration-none">
               <div id="info-interes">
                 <h3>Info de interes</h3>
-                <img src="img/information.svg" alt="">
+                <img src="img/information.svg" alt="" />
               </div>
             </a>
           </div>
         </div>
       </div>
     </div>
-    
 
     <!-- FOOTER -->
     <!-- <footer class="pie-pagina w-100 text-bg-dark">
