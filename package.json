@@ -1,13 +1,5 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.1",
-    "hover.css": "^2.3.2"
-  },
-  "devDependencies": {
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
-  },
-  "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "bootstrap": "^5.3.1"
   }
 }
