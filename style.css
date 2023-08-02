@@ -85,6 +85,33 @@
     bottom: 600px;
   }
 
+  /* ICONO DE WHATASPP FLOTANTE */
+
+  .wsp-btn a img{
+    height: 70px;
+    width: auto;
+    left: 95%;
+    top: 90%;
+    cursor: pointer;
+    z-index: 21;
+    display: none;
+  }
+
+  @media screen and (max-width:750px){
+    .wsp-btn a img {
+      left: 75%;
+      bottom: 70%;
+    }
+  }
+  @media screen and (min-width:1020px){
+    .wsp-btn a img {
+      left: 92%;
+      bottom: 72%;
+    }
+  }
+
+
+
 
 
 
