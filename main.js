@@ -5,4 +5,4 @@ function showWspBtn() {
     wspBtn.style.display = "flex";
   }
 
-setTimeout(showWspBtn, 4000);
+setTimeout(showWspBtn, 2500);
