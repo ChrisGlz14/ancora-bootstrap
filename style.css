@@ -87,6 +87,21 @@
 
   /* ICONO DE WHATASPP FLOTANTE */
 
+  @keyframes popup {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    50% {
+      width: 8rem;
+      height: 8rem;
+    }
+    100% {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
   .wsp-btn a img{
     height: 70px;
     width: auto;
@@ -95,18 +110,40 @@
     cursor: pointer;
     z-index: 21;
     display: none;
+    animation: popup 0.3s ease-in-out;
   }
 
   @media screen and (max-width:750px){
     .wsp-btn a img {
-      left: 75%;
+      left: 80%;
       bottom: 70%;
     }
   }
-  @media screen and (min-width:1020px){
+  @media screen and (min-width:850px){
     .wsp-btn a img {
-      left: 92%;
-      bottom: 72%;
+      left: 90%;
+      bottom: 90%;
+    }
+  }
+  @media screen and (min-width:1300px){
+    .wsp-btn a img {
+      left: 93%;
+      top: 85%;
+    }
+  }
+
+  @keyframes popup {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    50% {
+      width: 8rem;
+      height: 8rem;
+    }
+    100% {
+      width: 5rem;
+      height: 5rem;
     }
   }
 
