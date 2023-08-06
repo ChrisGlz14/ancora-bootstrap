@@ -164,7 +164,7 @@
   
   @media screen and (max-width:750px){
     .container-cards {
-      height: 125vh;
+      height: 150vh;
     }
   }
   @media screen and (min-width:850px){
