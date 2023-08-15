@@ -22,7 +22,15 @@ body {
 
 .title {
   text-shadow: 4px 4px 2px rgb(0, 0, 0);
+  opacity: 0;
+transition: opacity 0.6s ease 0s;
 }
+
+.title.show {
+  display: flex;
+  opacity: 1;
+}
+
 
 /* NAV */
 .nav-vertical {
@@ -53,15 +61,16 @@ body {
 }
 
 .logo-container img{
-  height: 70px;
+  height: 60px;
 }
+
 
 
 
 /* SERVICIOS */
 
 .servicios1 {
-  height: auto;
+  min-height: 430px;
   background-color: #0e173b;
 }
 
@@ -80,7 +89,7 @@ body {
 /* SERVICIOS 2 */
 
 .servicios2 {
-  height: auto;
+  min-height: 430px;
   background-color: #ffffff;
 }
 
