@@ -157,6 +157,8 @@
 
 
   /* GRID-TARJETAS */
+
+
   .container-cards {
     height: 32rem;
 
@@ -224,6 +226,12 @@
   }
   #info-interes:hover{
     transition: all 0.4s;
+  }
+
+  /* SECTION */
+
+  .info-section {
+    height: 800px;
   }
 
 

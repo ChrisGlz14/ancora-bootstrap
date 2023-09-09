@@ -19,20 +19,40 @@
   <!-- NAV -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-nav container-fluid">
-      <div class="logo-container p-2">
+      <div class="logo-container">
         <img src="./img/ANCORA 01 png.png" />
       </div>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNavDropdown"
+      >
         <ul class="nav-vertical nav-underline p-4">
           <li class="nav-item">
-            <a class="nav-link fs-5" aria-current="page" href="./index.html">Inicio</a>
+            <a class="nav-link fs-5" aria-current="page" href="./index.html"
+              >Inicio</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-5 m-3" href="./sobreancora.html">Sobre Nosotros</a>
+            <a class="nav-link fs-5" href="./sobreancora.html"
+              >Sobre Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="./sobreancora.html"
+              >Cotizá</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link fs-5" href="#">Proyectos</a>
@@ -40,8 +60,8 @@
         </ul>
       </div>
     </div>
-
   </nav>
+
   <!-- HEADER  -->
 
 
@@ -58,15 +78,18 @@
 <!-- SECCION SERVICIOS -->
 
 
-<section class="servicios1 pt-sm-0 pt-lg-0 ">
+<section class="servicios1 pb-5 sm-0 pt-lg-0 ">
     <h2 class="sub-title1 pt-5 d-flex justify-content-start">
       <span class="underline1 ms-3 ms-lg-5">Nuestros Servicios</span>
     </h2>
-      <p class="servicios-parrafo1 p-3 p-lg-5 fs-4 fs-lg-2">
+    <div class="servicios-div">
+       <p class="servicios-parrafo1 p-3 p-lg-5 fs-4 fs-lg-2">
         En Ancora proyectos nos especializamos en la
         elaboración de diseños y planos para construir, regularizar viviendas y especificaciones.
         Ya seas propietario, contructor o profesional del sector, nuestro equipo de expertos te brinda el soporte y asesoramiento que necesitas para llevar adelante tus proyectos.
       </p>
+      <img class="img-servicios-1" src="img/nuestrosservicios.svg" alt="">
+    </div>
 </section>
 
 <!-- OTRA SECCION -->
@@ -74,11 +97,14 @@
   <h2 class="sub-title2 pt-0 d-flex justify-content-end">
     <span class="underline2 mt-5 mx-3 mx-lg-5">Nuestros Servicios 2</span>
   </h2>
-    <p class="servicios-parrafo2 p-3 p-lg-5 fs-4 fs-lg-2">
-      En Ancora proyectos nos especializamos en la
-      elaboración de diseños y planos para construir, regularizar viviendas y especificaciones.
-      Ya seas propietario, contructor o profesional del sector, nuestro equipo de expertos te brinda el soporte y asesoramiento que necesitas para llevar adelante tus proyectos.
-    </p>
+  <div class="servicios-div-2">
+    <img class="img-servicios-2" src="img/ANCORA 01 png.png" alt="">
+      <p class="servicios-parrafo2 p-3 p-lg-5 fs-4 fs-lg-2">
+        En Ancora proyectos nos especializamos en la
+        elaboración de diseños y planos para construir, regularizar viviendas y especificaciones.
+        Ya seas propietario, contructor o profesional del sector, nuestro equipo de expertos te brinda el soporte y asesoramiento que necesitas para llevar adelante tus proyectos.
+      </p>
+  </div>
 </section>
 
 
@@ -136,5 +162,6 @@
   crossorigin="anonymous"
 ></script>
 <script src="https://unpkg.com/scrollreveal"></script>
+<script src="sobreAncora.js"></script>
 </body>
 </html>

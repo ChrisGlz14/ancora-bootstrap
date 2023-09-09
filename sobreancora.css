@@ -22,7 +22,15 @@ body {
 
 .title {
   text-shadow: 4px 4px 2px rgb(0, 0, 0);
+  opacity: 0;
+transition: opacity 0.6s ease 0s;
 }
+
+.title.show {
+  display: flex;
+  opacity: 1;
+}
+
 
 /* NAV */
 .nav-vertical {
@@ -53,17 +61,20 @@ body {
 }
 
 .logo-container img{
-  height: 70px;
+  height: 60px;
 }
+
 
 
 
 /* SERVICIOS */
 
 .servicios1 {
-  height: auto;
+  min-height: 430px;
   background-color: #0e173b;
 }
+
+
 
 .underline1 {
   color: #ffff;
@@ -71,16 +82,39 @@ body {
   padding-bottom: 2px; /* Espacio entre el texto y el subrayado */
 }
 
+.servicios-div {
+  display: flex;
+  align-items: center;
+}
+
 .servicios-parrafo1 {
+  max-width: 1500px;
   margin-top: 20px;
   color: #ffff;
   line-height: 40px;
 }
 
+.img-servicios-1 {
+  height: auto;
+  width: 250px;
+  
+  margin: 0 auto;
+}
+
+/* MEDIAQUERIS SERVICIOS */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+ .servicios-div {
+  display: flex;
+  flex-direction: column;
+ }
+}
+
+
+
 /* SERVICIOS 2 */
 
 .servicios2 {
-  height: auto;
+  min-height: 430px;
   background-color: #ffffff;
 }
 
@@ -90,12 +124,31 @@ body {
   border-bottom: 4px solid #0e173b; 
   padding-bottom: 2px;
 }
+.servicios-div-2 {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+}
 
 .servicios-parrafo2 {
+  max-width: 1500px;
   margin-top: 20px;
   color: #0e173b;
   line-height: 40px;
 }
+
+.img-servicios-2 {
+  height: 100px;
+  width: auto;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .servicios-div-2 {
+   flex-direction: column-reverse;
+   padding-bottom: 50px;
+  }
+ }
 
 
 /* FOOTER */
