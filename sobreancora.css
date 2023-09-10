@@ -8,6 +8,7 @@
 
 body {
   background-color: #2222;
+  overflow-x: hidden;
 }
 
 .header {
@@ -94,6 +95,7 @@ body {
   height: auto;
   width: 250px;
   margin: 0 auto;
+  overflow: hidden;
   -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -124,6 +126,7 @@ body {
 
 .underline2.animation {
   visibility: visible;
+  overflow: hidden;
   -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -150,6 +153,7 @@ body {
 
 .img-servicios-2.animation{
   visibility: visible;
+  overflow: hidden;
   -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
