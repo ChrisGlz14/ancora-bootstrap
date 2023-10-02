@@ -231,11 +231,72 @@
   /* SECTION */
 
   .info-section {
-    height: 800px;
+    height: 250px;
+  }
+
+  /* SERVICIOS ITEMS */
+
+  .servicios {
+    padding: 70px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 100px 0px 100px;
+    margin: 0px auto 0px auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .servicios-seccion {
+    text-align: center;
+    font-weight: 800;
+  }
+  .divisor {
+    width: 50px;
+    height: 3px;
+    background: #000000;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  .item {
+    margin-top: 30px;
+  }
+
+  .servicios .servicio-icono {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 4px;
+    float: left;
+    vertical-align: middle;
+    border-style: none;
+    border: 1px solid #142452;
+  }
+
+
+
+  .servicio-icono img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    border-style: none;
+  }
+
+  .servicio-titulo {
+    margin: 15px 45px 25px 80px;
+    font-weight: 700;
   }
 
 
 /* FOOTER */
+
+.pie-pagina {
+  margin-top: 120px;
+}
+
 .box1 .img-container a img{
   width: 250px;
   height: auto;
