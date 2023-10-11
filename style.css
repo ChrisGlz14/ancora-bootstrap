@@ -231,7 +231,7 @@
   /* SECTION */
 
   .info-section {
-    height: 250px;
+    height: 150px;
   }
 
   /* SERVICIOS ITEMS */
@@ -242,7 +242,7 @@
     justify-content: center;
     width: 100%;
     padding: 0px 100px 0px 100px;
-    margin: 0px auto 0px auto;
+    margin: 50px auto 0px auto;
   }
 
   .row {
@@ -253,7 +253,16 @@
   .servicios-seccion {
     text-align: center;
     font-weight: 800;
+    margin-top: 80px;
   }
+  
+  .servicios-seccion.animation {
+    -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    visibility: visible;
+    overflow: hidden;
+  }
+
   .divisor {
     width: 50px;
     height: 3px;
@@ -262,18 +271,27 @@
     margin-bottom: 20px;
   }
   
+  .divisor.animation {
+    visibility: visible;
+    overflow: hidden;
+    -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+
+
+  
   .item {
     margin-top: 30px;
   }
 
   .servicios .servicio-icono {
-    background-color: #fff;
+    background-color: #142452;
     border-radius: 50%;
     padding: 4px;
     float: left;
     vertical-align: middle;
     border-style: none;
-    border: 1px solid #142452;
+    border: 1px solid #ffffff;
   }
 
 
@@ -310,4 +328,24 @@
 }
 .redes a:hover{
   color:rgb(216, 255, 242);
+}
+
+
+
+/* ANIMACIONES */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
