@@ -23,9 +23,6 @@ function MovSlider(orientacion) {
 
 const seccionServicios = document.querySelector(".servicios");
 
-if () {
-  
-}
 
 //Servicios Title
 
