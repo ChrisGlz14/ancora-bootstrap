@@ -47,7 +47,7 @@
     position: relative;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 440px) {
     .Contenido {
       height: 40vh;
     }
@@ -60,11 +60,9 @@
     }
 
     .derecha img, .izquierda img {
-      display: block; /* Cambiamos display: flex; a display: block; */
-      margin: 0 auto; /* Centrar horizontalmente */
-      height: 50px;
-      width: 20%; /* Asegúrate de que la imagen no sea más ancha que su contenedor */
-      height: auto; /* El valor "auto" mantiene la proporción original de la imagen */
+      display: block; 
+      margin: 0 auto; 
+      height: 200px;
     }
   }
 
@@ -81,11 +79,11 @@
     }
 
     .derecha img, .izquierda img {
-      display: block; /* Cambiamos display: flex; a display: block; */
-      margin: 0 auto; /* Centrar horizontalmente */
+      display: block;
+      margin: 0 auto; 
       height: 50px;
-      width: 20%; /* Asegúrate de que la imagen no sea más ancha que su contenedor */
-      height: auto; /* El valor "auto" mantiene la proporción original de la imagen */
+      width: 20%; 
+      height: auto; 
     }
   }
   
@@ -122,7 +120,7 @@
   }
   
   .derecha img {
-    max-width: 100%;
+    max-width: 20%;
     max-height: 100%; 
     height: auto;
     width: auto;
@@ -142,7 +140,7 @@
   }
   
   .izquierda img {
-    max-width: 100%;
+    max-width: 20%;
     max-height: 100%; 
     height: auto;
     width: auto;
