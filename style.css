@@ -320,8 +320,13 @@
     display: flex;
     justify-content: center;
     width: 100%;
+<<<<<<< Updated upstream
     padding: 0px 100px 0px 100px;
     margin: 50px auto 0px auto;
+=======
+    padding: 0px 250px 0px 250px;
+    margin: 0px auto 0px auto;
+>>>>>>> Stashed changes
   }
 
   .row {

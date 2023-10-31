@@ -21,6 +21,11 @@ function MovSlider(orientacion) {
   slider[0].style.marginLeft = margen;
 }
 
+const seccionServicios = document.querySelector(".servicios");
+
+if () {
+  
+}
 
 //Servicios Title
 
