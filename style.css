@@ -68,7 +68,7 @@
     }
   }
 
-  @media screen and (min-width: 650px) {
+  @media screen and (min-width: 500px) {
     .Contenido {
       height: 70vh;
     }
