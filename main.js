@@ -8,6 +8,19 @@ function showWspBtn() {
 setTimeout(showWspBtn, 2500);
 
 
+// SlIDER
+var slider = document.getElementsByClassName('slider');
+var Indice = 0;
+
+function MovSlider(orientacion) {
+  var MaxSlider = slider.length;
+  Indice = (orientacion == "derecha") ? Indice + 1 : Indice - 1;
+  Indice = (Indice >= MaxSlider) ? 0 : Indice;
+  Indice = (Indice < 0) ? MaxSlider - 1 : Indice;
+  var margen = "-" + (Indice * slider[Indice].scrollWidth) + "px";
+  slider[0].style.marginLeft = margen;
+}
+
 
 //Servicios Title
 

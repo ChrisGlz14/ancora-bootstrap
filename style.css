@@ -40,50 +40,111 @@
 
 
   /* SLIDER */
-  .text-slider-container {
-    position: absolute;
-    top: 100px;
-    z-index: 20;
-  }
 
-  @media screen and (max-width: 560px) {
-    .text-slider-container {
-      position: absolute;
-      top: 10px;
-      height: 90px;
-    }
-
-    .text-slider-container h1,h3 {
-
-      font-size: 15px;
-    }
-    
-  }
-
-  .carousel-inner {
-    width:100% ; /* Ancho máximo deseado */
- /* Alto máximo deseado */
-    margin: 0 auto; /* Centrar horizontalmente el carousel */
-    overflow: hidden
-  }
-
-   .carousel-item {
-    position: relative;
+  .Contenido {
+    height: 100vh;
     width: 100%;
-    height: 600px;
-    object-fit: cover;
+    position: relative;
   }
 
-  @media screen and (max-width: 570px ) {
-    .carousel-item {
-      height: auto;
+  @media screen and (max-width: 400px) {
+    .Contenido {
+      height: 50vh;
+    }
+
+    .derecha,.izquierda {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    .derecha img, .izquierda img {
+      display: block; /* Cambiamos display: flex; a display: block; */
+      margin: 0 auto; /* Centrar horizontalmente */
+      height: 50px;
+      width: 20%; /* Asegúrate de que la imagen no sea más ancha que su contenedor */
+      height: auto; /* El valor "auto" mantiene la proporción original de la imagen */
     }
   }
-
-
-  .carousel-item img {
-    bottom: 600px;
+  
+  #banner-inicio {
+    width: 100%;
+    height: 75%;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
   }
+  
+  #banner-inicio .slider {
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: inline-block;
+    transition: all 1s;
+    margin-right: -4px;
+  }
+  
+  .derecha {
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    width: 20%;
+    height: 100%;
+    top: 0%;
+    z-index: 1;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .derecha img {
+    max-width: 100%;
+    max-height: 100%; 
+    height: auto;
+    width: auto;
+  }
+
+  .izquierda {
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    width: 20%;
+    height: 100%;
+    top: 0%;
+    z-index: 1;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .izquierda img {
+    max-width: 100%;
+    max-height: 100%; 
+    height: auto;
+    width: auto;
+  }
+  .derecha {
+    right: 0px;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .izquierda {
+    left: 0px;
+  }
+  
+  .derecha:hover {
+    cursor: pointer;
+  }
+  
+  .izquierda:hover {
+    cursor: pointer;
+  }
+
 
   /* ICONO DE WHATASPP FLOTANTE */
 
