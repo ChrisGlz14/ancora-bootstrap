@@ -42,12 +42,13 @@
   /* SLIDER */
 
   .Contenido {
+    height: 40em;
     position: relative;
   }
 
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 800px) {
     .Contenido {
-      height: 40vh;
+      height: 32em;
     }
 
     .derecha,.izquierda {
@@ -55,39 +56,31 @@
       justify-content: center;
       align-items: center;
       box-sizing: border-box;
+      height: 10em;
     }
 
     .derecha img, .izquierda img {
       display: block; 
       margin: 0 auto; 
-      height: 200px;
     }
-  }
 
-  @media screen and (min-width: 500px) {
-    .Contenido {
+    #banner-inicio {
+      width: 100%;
       height: 70vh;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
     }
 
-    .derecha,.izquierda {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-sizing: border-box;
-    }
-
-    .derecha img, .izquierda img {
-      display: block;
-      margin: 0 auto; 
-      height: 50px;
-      width: 20%; 
-      height: auto; 
+    .slider {
+      height: 20em;
     }
   }
+
   
   #banner-inicio {
     width: 100%;
-    height: 75%;
+    height: 70vh;
     position: relative;
     overflow: hidden;
     white-space: nowrap;
@@ -137,6 +130,9 @@
     align-items: center;
   }
   
+  .slider {
+    height: 30em;
+  }
   .izquierda img {
     max-width: 20%;
     max-height: 100%; 
@@ -144,6 +140,7 @@
     width: auto;
   }
   .derecha {
+    height: 100%;
     right: 0px;
     display: flex;
     justify-content: center;
