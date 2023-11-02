@@ -201,6 +201,7 @@
   }
 
   .wsp-btn a img{
+    position: sticky;
     height: 70px;
     width: auto;
     left: 95%;
