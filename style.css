@@ -270,7 +270,7 @@
   }
   @media screen and (min-width: 481px) and (max-width: 1399px) {
     .container-cards {
-      height: 85rem;
+      height: 45rem;
     }
   }
   @media screen and (min-width: 1400px) {
@@ -330,14 +330,14 @@
   /* SECTION */
 
   .info-section {
-    height: 150px;
+    height: 1rem;
   }
 
   /* SERVICIOS ITEMS */
 
   @media screen and (max-width: 480px) {
-    .servicios {
-      padding: 70px 0px 30px 0px;
+    .servicios-items {
+      padding: 10px 0px 30px 0px;
       display: flex;
       justify-content: center;
       width: 100%;
@@ -351,28 +351,27 @@
     }
 
   }
-  .servicios {
-    padding: 70px 0px 30px 0px;
+  .servicios-items {
+    padding: 10px 0px 30px 0px;
     display: grid;
     justify-content: center;
     width: 100%;
-
     margin: 0px auto 0px auto;
-
   }
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   .divisor.animation {
     padding: 2px;
   }
 
-  .row div {
+  .items {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
     padding: 1rem;
   }
+
+  
 
   .servicios-seccion {
     text-align: center;
@@ -411,7 +410,7 @@
   .servicios .servicio-icono {
     background-color: #142452;
     border-radius: 50%;
-    padding: 4px;
+    padding: 8px;
     float: left;
     vertical-align: middle;
     border-style: none;
