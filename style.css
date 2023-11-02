@@ -334,16 +334,28 @@
 
   /* SERVICIOS ITEMS */
 
+  @media screen and (max-width: 480px) {
+    .servicios {
+      padding: 70px 0px 30px 0px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+  
+      padding: 0px 100px 0px 100px;
+      margin: 50px auto 0px auto;
+  
+      padding: 0px 250px 0px 250px;
+      margin: 0px auto 0px auto;
+  
+    }
+
+  }
   .servicios {
     padding: 70px 0px 30px 0px;
-    display: flex;
+    display: grid;
     justify-content: center;
     width: 100%;
 
-    padding: 0px 100px 0px 100px;
-    margin: 50px auto 0px auto;
-
-    padding: 0px 250px 0px 250px;
     margin: 0px auto 0px auto;
 
   }
@@ -351,6 +363,14 @@
   .row {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .divisor.animation {
+    padding: 2px;
+  }
+
+  .row div {
+    padding: 1rem;
   }
 
   .servicios-seccion {
@@ -367,7 +387,7 @@
   }
 
   .divisor {
-    width: 50px;
+    width: 70px;
     height: 3px;
     background: #000000;
     margin: 0 auto;
