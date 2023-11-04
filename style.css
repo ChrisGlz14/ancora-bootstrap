@@ -363,8 +363,12 @@ body {
     margin-right: -4px;
   }
 
+  .servicios {
+    margin-top: 0rem;
+  }
+
   .servicios-text {
-    margin-top: 35em;
+    margin-top: 35rem;
   }
 
   .slider {
@@ -403,6 +407,10 @@ body {
     white-space: nowrap;
   }
 
+  .servicios {
+    margin-top: 1rem;
+  }
+
   .servicios-text {
     margin-top: 0rem;
   }
@@ -410,5 +418,20 @@ body {
   .wsp-btn a img {
     left: 90%;
     bottom: 90%;
+  }
+
+  .container-cards {
+    height: 19rem;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+
+  .servicios {
+    
+    margin-top: -40rem !important;
+  }
+  .servicios-text {
+    margin-top: 55rem !important;
   }
 }
