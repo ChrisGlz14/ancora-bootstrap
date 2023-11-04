@@ -286,26 +286,12 @@ body {
 
 /* SLIDER MOBILE */
 @media screen and (max-width: 360px) {
-  .nav-vertical {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-  }
+  
   .Contenido {
     height: 6rem;
     position: relative;
   }
 
-  #banner-inicio {
-    width: 100%;
-    height: 16rem;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-  }
   
   .servicios {
     margin-top: 0rem;
@@ -320,6 +306,14 @@ body {
 
 /* TABLET, NOTEBOOK */
 @media screen and (min-width: 361px) and (max-width: 899px) {
+  .nav-vertical {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
   .Contenido {
     height: 18rem;
     position: relative;
